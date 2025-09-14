@@ -103,7 +103,7 @@ export class JinaGroundingProvider implements EnhancementProvider {
 						token_usage: data.data.usage.tokens,
 					},
 				};
-			} catch (error) {
+			} catch (error: unknown) {
 				if (error instanceof ProviderError) {
 					throw error;
 				}

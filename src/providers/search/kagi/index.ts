@@ -173,7 +173,7 @@ export class KagiSearchProvider implements SearchProvider {
 					score: result.rank,
 					source_provider: this.name,
 				}));
-			} catch (error) {
+			} catch (error: unknown) {
 				if (error instanceof ProviderError) {
 					throw error;
 				}
