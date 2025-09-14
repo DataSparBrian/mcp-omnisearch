@@ -115,7 +115,7 @@ export class ExaSearchProvider implements SearchProvider {
 						resolvedSearchType: data.resolvedSearchType,
 					},
 				}));
-			} catch (error) {
+			} catch (error: unknown) {
 				if (error instanceof ProviderError) {
 					throw error;
 				}

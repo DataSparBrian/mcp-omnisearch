@@ -108,7 +108,7 @@ class ToolRegistry {
 									},
 								],
 							};
-						} catch (error) {
+						} catch (error: unknown) {
 							const error_response = create_error_response(
 								error as Error,
 							);
@@ -160,7 +160,7 @@ class ToolRegistry {
 								},
 							],
 						};
-					} catch (error) {
+					} catch (error: unknown) {
 						const error_response = create_error_response(
 							error as Error,
 						);
@@ -217,7 +217,7 @@ class ToolRegistry {
 								},
 							],
 						};
-					} catch (error) {
+					} catch (error: unknown) {
 						const error_response = create_error_response(
 							error as Error,
 						);
@@ -263,7 +263,7 @@ class ToolRegistry {
 								},
 							],
 						};
-					} catch (error) {
+					} catch (error: unknown) {
 						const error_response = create_error_response(
 							error as Error,
 						);
@@ -316,7 +316,7 @@ class ToolRegistry {
 								},
 							],
 						};
-					} catch (error) {
+					} catch (error: unknown) {
 						const error_response = create_error_response(
 							error as Error,
 						);
@@ -358,7 +358,7 @@ class ToolRegistry {
 								},
 							],
 						};
-					} catch (error) {
+					} catch (error: unknown) {
 						const error_response = create_error_response(
 							error as Error,
 						);

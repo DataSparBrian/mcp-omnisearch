@@ -121,7 +121,7 @@ export class ExaAnswerProvider implements SearchProvider {
 				}
 
 				return results;
-			} catch (error) {
+			} catch (error: unknown) {
 				if (error instanceof ProviderError) {
 					throw error;
 				}

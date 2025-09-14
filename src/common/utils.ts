@@ -114,7 +114,7 @@ export const retry_with_backoff = async <T>(
 	while (true) {
 		try {
 			return await fn();
-		} catch (error) {
+		} catch (error: unknown) {
 			if (retries >= max_retries) {
 				throw error;
 			}

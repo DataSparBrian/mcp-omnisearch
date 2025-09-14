@@ -117,7 +117,7 @@ export class TavilyExtractProvider implements ProcessingProvider {
 					},
 					source_provider: this.name,
 				};
-			} catch (error) {
+			} catch (error: unknown) {
 				if (error instanceof ProviderError) {
 					throw error;
 				}

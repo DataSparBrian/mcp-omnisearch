@@ -136,7 +136,7 @@ export class FirecrawlScrapeProvider implements ProcessingProvider {
 								metadata: data.data.metadata,
 								success: true,
 							};
-						} catch (error) {
+						} catch (error: unknown) {
 							// Log the error but continue processing other URLs
 							console.error(`Error processing ${single_url}:`, error);
 							return {
@@ -200,7 +200,7 @@ export class FirecrawlScrapeProvider implements ProcessingProvider {
 					},
 					source_provider: this.name,
 				};
-			} catch (error) {
+			} catch (error: unknown) {
 				if (error instanceof ProviderError) {
 					throw error;
 				}
